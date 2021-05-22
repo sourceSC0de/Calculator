@@ -26,10 +26,8 @@ public class EventListener implements ActionListener {
                     if (currentText.charAt(currentText.length() - 1) == '.') {
                         calculator.getTextField().setText(calculator.getTextField().getText().concat(String.valueOf(i)));
                     } else if (!Utils.isOperator(Character.toString(currentText.charAt(currentText.length() - 1)))) {
-                        System.out.println("yo");
                         calculator.getTextField().setText(calculator.getTextField().getText().concat(String.valueOf(i)));
                     } else {
-                        System.out.println("!yo");
                         calculator.getTextField().setText(calculator.getTextField().getText().concat(" " + i));
                     }
                 }
