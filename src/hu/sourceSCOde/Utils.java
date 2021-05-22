@@ -57,4 +57,8 @@ public class Utils {
         return null;
     }
 
+    public static boolean isOperator(String s) {
+        return (s.equals("+") || s.equals("-") || s.equals("*") || s.equals("/"));
+    }
+
 }

@@ -19,13 +19,18 @@ public class EventListener implements ActionListener {
 
         for (int i = 0; i < 10; i++) {
             if (e.getSource() == calculator.getNumberButtons()[i]) {
+                System.out.println(currentText);
                 if (!calculator.getTextField().getText().contains(" ")) {
                     calculator.getTextField().setText(calculator.getTextField().getText().concat(String.valueOf(i)));
                 } else {
                     if (currentText.charAt(currentText.length() - 1) == '.') {
                         calculator.getTextField().setText(calculator.getTextField().getText().concat(String.valueOf(i)));
+                    } else if (!Utils.isOperator(Character.toString(currentText.charAt(currentText.length() - 1)))) {
+                        System.out.println("yo");
+                        calculator.getTextField().setText(calculator.getTextField().getText().concat(String.valueOf(i)));
                     } else {
-                        calculator.getTextField().setText(calculator.getTextField().getText().concat(" " + String.valueOf(i)));
+                        System.out.println("!yo");
+                        calculator.getTextField().setText(calculator.getTextField().getText().concat(" " + i));
                     }
                 }
             }
@@ -40,7 +45,7 @@ public class EventListener implements ActionListener {
                     } else {
                         //TODO
                         String[] tempArray = currentText.split(Utils.getOperator(calculator.getOperator()));
-                        if (!tempArray[1].contains(".")){
+                        if (!tempArray[1].contains(".")) {
                             calculator.getTextField().setText(calculator.getTextField().getText().concat("."));
                         }
                     }
@@ -154,7 +159,7 @@ public class EventListener implements ActionListener {
                     } else {
                         //TODO
                         String[] tempArray = currentText.split(Utils.getOperator(calculator.getOperator()) + " ");
-                        if (!tempArray[1].contains("-")){
+                        if (!tempArray[1].contains("-")) {
                             calculator.getTextField().setText(tempArray[0] + calculator.getOperator() + " -" + tempArray[1]);
                         }
                     }

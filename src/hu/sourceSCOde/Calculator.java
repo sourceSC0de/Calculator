@@ -93,7 +93,7 @@ public class Calculator {
         frame.add(textField);
     }
 
-    public void show(){
+    public void show() {
         frame.setVisible(true);
     }
 
@@ -105,7 +105,7 @@ public class Calculator {
         return textField;
     }
 
-    public void setTextField(String text){
+    public void setTextField(String text) {
         this.textField.setText(text);
     }
 
