@@ -1,1 +1,0 @@
-operátor lenyomásakor tegye az eredményt a resultba.

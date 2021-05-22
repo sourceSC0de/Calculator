@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a3c4914-6068-4aeb-8cfa-94169d94641f" name="Default Changelist" comment="Init" />
+    <list default="true" id="2a3c4914-6068-4aeb-8cfa-94169d94641f" name="Default Changelist" comment="Init">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hu/sourceSCOde/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hu/sourceSCOde/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hu/sourceSCOde/notes.txt" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,7 +114,7 @@
       <workItem from="1621497764346" duration="14358000" />
       <workItem from="1621600873019" duration="1144000" />
       <workItem from="1621602033908" duration="4148000" />
-      <workItem from="1621673582424" duration="18071000" />
+      <workItem from="1621673582424" duration="18334000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1621601133032</created>

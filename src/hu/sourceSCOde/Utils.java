@@ -1,5 +1,9 @@
 package hu.sourceSCOde;
 
+/**
+ * A class for everything.
+ */
+
 public class Utils {
 
     public static String[] operators = {"\\+", "\\-", "\\*", "\\/"};
